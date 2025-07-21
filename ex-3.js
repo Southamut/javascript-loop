@@ -1,6 +1,10 @@
-// Exercise #3: Find a Minimum Score
-let scores = [100, 20, 3, 1000];
-let minScore;
-// Start coding here
+let studentScores = [100, 20, 3, 100];
+let minScore = studentScores[0];
+
+for (let i = 1; i < studentScores.length; i++) {
+    if (studentScores[i] < minScore) {
+        minScore = studentScores[i];
+    }
+}
 
 console.log(minScore);
